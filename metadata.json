@@ -1,0 +1,7 @@
+{
+  "name": "1% — A Travessia dos Poucos",
+  "description": "An immersive, minimalist landing page and reflection tool for those seeking spiritual and existential depth. Features high-end design, ambient interactions, and AI-powered self-examination.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
