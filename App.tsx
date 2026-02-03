@@ -45,20 +45,13 @@ const App: React.FC = () => {
         <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-amber-600/5 rounded-full blur-[120px] animate-float"></div>
       </div>
 
-      {/* Floating Side Tagline - CORRIGIDO: Posição e Visibilidade */}
-      <div className="fixed left-8 inset-y-0 z-40 hidden xl:flex items-center pointer-events-none">
+      {/* Floating Side Tagline - CORRIGIDO: Agora usa classe CSS dedicada para evitar cortes */}
+      <div className="fixed left-6 inset-y-0 z-40 hidden xl:flex items-center pointer-events-none">
         <div className="flex flex-col items-center justify-center">
-          <span 
-            className="text-ember-500/80 text-[10px] uppercase tracking-[0.9em] font-bold whitespace-nowrap drop-shadow-lg"
-            style={{ 
-              writingMode: 'vertical-lr', 
-              transform: 'rotate(180deg)',
-              textRendering: 'optimizeLegibility'
-            }}
-          >
+          <span className="vertical-tagline text-ember-500/80 text-[10px] uppercase tracking-[0.9em] font-bold whitespace-nowrap drop-shadow-lg">
             Nem todos foram chamados para a superfície
           </span>
-          <div className="w-px h-12 bg-ember-500/30 mt-8"></div>
+          <div className="w-px h-16 bg-gradient-to-b from-ember-500/40 to-transparent mt-8"></div>
         </div>
       </div>
 
@@ -152,7 +145,6 @@ const HomeView: React.FC = () => (
       </div>
     </section>
 
-    {/* Diagnóstico Section */}
     <section id="diagnostico" className="py-48 bg-void-900 relative border-y border-ash-900/30">
       <div className="max-w-6xl mx-auto px-8">
         <div className="grid lg:grid-cols-2 gap-32 items-center">
